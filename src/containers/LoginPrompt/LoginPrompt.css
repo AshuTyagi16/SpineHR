@@ -1,0 +1,7 @@
+.Container {
+    display: flex;
+    flex-flow: row;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,60 @@
+.FormContainer {
+    padding: 2px 16px;
+    z-index: 10;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.Form {
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    background: #eee;
+    justify-content: center;
+    margin: auto 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.Form:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ItemContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.Input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 200px;
+    margin-left: 42px;
+}
+
+.DropDown {
+    padding: 8px;
+    width: 100px;
+    margin-left: 60px;
+    border: none;
+    outline: none;
+}
+
+.Label {
+    padding: 8px;
+}
+
+.ButtonContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+}
