@@ -1,0 +1,16 @@
+.Container {
+    height: 25px;
+    display: flex;
+    flex-flow: row;
+    justify-items: flex-start;
+    align-items: center;
+    padding: 6px;
+    background: slategray ;
+}
+
+.Text {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+}

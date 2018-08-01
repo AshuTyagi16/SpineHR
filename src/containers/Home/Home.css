@@ -1,0 +1,43 @@
+.Container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
+    background: white;
+    margin: 20px 10px;
+    flex-wrap: wrap;
+    padding: 20px 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.OuterContainer {
+    padding: 1px 52px;
+    background: rgba(197, 197, 197, 0.5);
+}
+
+.CardItem {
+    width: 380px;
+    height: 370px;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    background: white;
+    box-sizing: border-box;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 500px) {
+    .OuterContainer{
+        padding: 1px;
+    }
+    .Container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .CardItem {
+        flex: 1 0 90%;
+        height: 250px;
+    }
+}
