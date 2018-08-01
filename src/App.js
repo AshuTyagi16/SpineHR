@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import classes from './App.css';
 import LoginPrompt from './containers/LoginPrompt/LoginPrompt';
 import Logout from './containers/Auth/Logout/Logout';
+import MemberDetail from './containers/Team/TeamMembers/TeamMember/MemberDetail/MemberDetail';
 import Home from './containers/Home/Home';
 import {connect} from 'react-redux';
 import {withRouter, Route, Switch, Redirect} from 'react-router-dom';
@@ -29,6 +30,7 @@ class App extends Component {
                     <Route path='/login' component={LoginPrompt}/>
                     <Route path='/logout' component={Logout}/>
                     <Route path='/home' component={Home}/>
+                    <Route path='/memberdetail' component={MemberDetail}/>
                     <Route path='/' component={LoginPrompt}/>
                     <Redirect to="/"/>
                 </Switch>

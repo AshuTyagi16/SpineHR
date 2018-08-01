@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import classes from './Home.css';
 import CardHeader from '../../components/UI/CardHeader/CardHeader';
+import TeamMembers from '../Team/TeamMembers/TeamMembers';
 
 class Home extends Component {
     render() {
@@ -10,19 +11,28 @@ class Home extends Component {
                     <div className={classes.CardItem}>
                         <CardHeader
                             pos={1}
-                            color="#009900"
+                            color="#708090"
                             text="Thought Of the Day"/>
+                        <h1 className={classes.Quote}>"After you're gone, it wouldn't matter how you made others
+                            feel."</h1>
                     </div>
                     <div className={classes.CardItem}>
                         <CardHeader
                             pos={2}
-                            color="#FF0000"
+                            color="#708090"
                             text="Pending List For Approval"/>
                     </div>
                     <div className={classes.CardItem}>
                         <CardHeader
+                            pos={2}
+                            color="#708090"
+                            text="Team's Approval"/>
+                        <TeamMembers/>
+                    </div>
+                    <div className={classes.CardItem}>
+                        <CardHeader
                             pos={3}
-                            color="#9900FF"
+                            color="#708090"
                             text="My Attendance"/>
                     </div>
                     <div className={classes.CardItem}>
@@ -34,7 +44,7 @@ class Home extends Component {
                     <div className={classes.CardItem}>
                         <CardHeader
                             pos={5}
-                            color="#3399FF"
+                            color="#708090"
                             text="Notice Board"/>
                     </div>
                 </div>

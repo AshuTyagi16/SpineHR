@@ -20,17 +20,25 @@
 .CardItem {
     width: 380px;
     height: 370px;
-    align-content: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     background: white;
     box-sizing: border-box;
     margin-bottom: 35px;
 }
 
+.Quote {
+    padding: 1px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 100px;
+}
+
 @media (max-width: 500px) {
-    .OuterContainer{
+    .OuterContainer {
         padding: 1px;
     }
+
     .Container {
         padding: 20px;
         margin: 20px;
@@ -39,5 +47,9 @@
     .CardItem {
         flex: 1 0 90%;
         height: 250px;
+    }
+    .Quote{
+        font-size: 6vw;
+        max-font-size: 6vw;
     }
 }
