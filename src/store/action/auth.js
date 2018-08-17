@@ -39,10 +39,10 @@ export const auth = (email, password, isSignUp) => {
             returnSecureToken: true
         };
 
-        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBn0QGwSq8OhdBruCNG2qTprLfDSLIHcTY';
+        let url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyBhtXHt3If1V7VGf-myDjHegZ1PCwhcN-I';
 
         if (!isSignUp) {
-            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBn0QGwSq8OhdBruCNG2qTprLfDSLIHcTY';
+            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyBhtXHt3If1V7VGf-myDjHegZ1PCwhcN-I';
         }
 
         axios

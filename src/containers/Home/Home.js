@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import classes from './Home.css';
 import CardHeader from '../../components/UI/CardHeader/CardHeader';
 import TeamMembers from '../Team/TeamMembers/TeamMembers';
+import Paper from 'material-ui/Paper';
 
 class Home extends Component {
     render() {
@@ -9,12 +10,14 @@ class Home extends Component {
             <div className={classes.OuterContainer}>
                 <div className={classes.Container}>
                     <div className={classes.CardItem}>
-                        <CardHeader
-                            pos={1}
-                            color="#708090"
-                            text="Thought Of the Day"/>
-                        <h1 className={classes.Quote}>"After you're gone, it wouldn't matter how you made others
-                            feel."</h1>
+                        <Paper className={classes.QuoteCard} zDepth={2}>
+                            <CardHeader
+                                pos={1}
+                                color="#708090"
+                                text="Thought Of the Day"/>
+                            <h1 className={classes.Quote}>"After you're gone, it wouldn't matter how you made others
+                                feel."</h1>
+                        </Paper>
                     </div>
                     <div className={classes.CardItem}>
                         <CardHeader

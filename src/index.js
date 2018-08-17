@@ -8,11 +8,14 @@ import {BrowserRouter} from 'react-router-dom';
 import thunk from 'redux-thunk';
 import authReducer from './store/reducer/auth';
 import WebFont from 'webfontloader';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import registerServiceWorker from './registerServiceWorker';
 
 WebFont.load({
     google: {
-        families: ['Montserrat:300i', 'Open+Sans:400,600,700', 'sans-serif']
+        families: ['Montserrat:300i', 'Roboto:300,400,500', 'Open+Sans:400,600,700', 'sans-serif']
     }
 });
 
@@ -27,7 +30,9 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <App/>
+            <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
+                <App/>
+            </MuiThemeProvider>
         </BrowserRouter>
     </Provider>, document.getElementById('root'));
 registerServiceWorker();
